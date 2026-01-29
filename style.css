@@ -1,0 +1,32 @@
+body{
+  margin:0;
+  background:radial-gradient(#111,#000);
+  color:#eee;
+  font-family:Arial;
+  text-align:center;
+}
+h1{letter-spacing:3px}
+button{
+  padding:10px 20px;
+  background:#4fc3f7;
+  border:none;
+  border-radius:8px;
+  font-weight:bold;
+}
+canvas{
+  margin:15px auto;
+  display:block;
+  background:#0f1b2b;
+  border-radius:16px;
+}
+.panel{
+  width:300px;
+  margin:30px auto;
+  padding:20px;
+  border-radius:16px;
+}
+.glass{
+  background:rgba(20,30,45,.7);
+  backdrop-filter:blur(15px);
+}
+label{display:block;margin:10px 0}

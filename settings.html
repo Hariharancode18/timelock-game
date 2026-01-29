@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TIMELOCK – Customize</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎛️ CUSTOMIZE YOUR GAME</h1>
+
+<div class="panel glass">
+
+<h3>🧍 Player</h3>
+<label>Color <input type="color" id="playerColor" value="#4fc3f7"></label>
+<label><input type="checkbox" id="playerGlow" checked> Glow</label>
+
+<hr>
+
+<h3>👻 Ghost</h3>
+<label>Color <input type="color" id="ghostColor" value="#ffffff"></label>
+<label>
+Speed
+<select id="ghostSpeed">
+  <option value="1">Slow</option>
+  <option value="2" selected>Normal</option>
+  <option value="3">Fast</option>
+</select>
+</label>
+
+<hr>
+
+<h3>🧠 Gameplay</h3>
+<label>Move Limit
+<input type="range" id="moveCount" min="5" max="50" value="20"
+oninput="moveVal.innerText=this.value">
+</label>
+<p>Moves: <span id="moveVal">20</span></p>
+
+<label><input type="checkbox" id="watcher" checked> Watcher Ghost</label>
+<label><input type="checkbox" id="noise" checked> Noise System</label>
+
+<hr>
+
+<h3>🎨 Visuals</h3>
+<label>
+Theme
+<select id="theme">
+  <option value="dark">Dark</option>
+  <option value="neon">Neon</option>
+</select>
+</label>
+<label><input type="checkbox" id="grid" checked> Show Grid</label>
+
+<button onclick="save()">▶ Play Game</button>
+</div>
+
+<script src="settings.js"></script>
+</body>
+</html>
